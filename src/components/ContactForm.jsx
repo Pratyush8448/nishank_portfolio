@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaInstagram,
   FaTwitter,
-  FaSnapchatGhost,
 } from 'react-icons/fa'
 
 export default function Contact() {
@@ -37,7 +36,6 @@ export default function Contact() {
 
       {/* Social Links */}
       <div className="flex justify-center flex-wrap gap-6 mt-16">
-        {/* Individual icon buttons */}
         <a
           href="https://www.linkedin.com/in/pratyush-pulak-nishank-02a10b311"
           target="_blank"
@@ -69,14 +67,6 @@ export default function Contact() {
           className="text-4xl p-4 rounded-full bg-[#1f0030] text-sky-400 hover:text-white hover:bg-sky-500 shadow-md transition-transform transform hover:scale-125"
         >
           <FaTwitter />
-        </a>
-        <a
-          href="https://snapchat.com/t/7sQaGVNG"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-4xl p-4 rounded-full bg-[#1f0030] text-yellow-300 hover:text-black hover:bg-yellow-300 shadow-md transition-transform transform hover:scale-125"
-        >
-          <FaSnapchatGhost />
         </a>
       </div>
     </section>
