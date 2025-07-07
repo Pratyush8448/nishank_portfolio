@@ -15,37 +15,29 @@ export default function AboutMe() {
       </motion.h2>
 
       {/* Description Block */}
-      <div className="max-w-3xl mx-auto text-gray-300 text-lg md:text-xl leading-relaxed space-y-6">
+      <div className="max-w-3xl mx-auto text-gray-300 text-lg md:text-xl leading-relaxed space-y-8">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hello, I’m <span className="text-violet-400 font-semibold">Pratyush Pulak Nishank</span>, a <span className="text-violet-300">21-year-old</span> computer science and data science student, driven by curiosity and a deep interest in AI.
+          Hey, I’m <span className="text-violet-400 font-semibold">Pratyush Pulak Nishank</span>, a <span className="text-violet-300">21-year-old</span> tech enthusiast from <span className="text-sky-300 font-medium">Odisha</span>. I’m currently pursuing a <span className="text-sky-300">B.Tech in Computer Science</span> from <span className="font-medium text-cyan-300">Silicon University</span> and a parallel <span className="text-orange-300">B.Sc. in Data Science</span> from <span className="text-yellow-300 font-medium">IIT Madras</span>. My journey into tech is driven by a deep curiosity and a strong desire to build intelligent, impactful solutions using AI.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
         >
-          I am pursuing a <span className="text-sky-300">B.Tech in Computer Science</span> from Silicon University and a <span className="text-orange-300">B.Sc. in Data Science</span> from IIT Madras.
+          My key areas of interest include <span className="text-violet-400 font-medium">machine learning</span>, <span className="text-teal-300 font-medium">agentic AI</span>, and <span className="text-pink-300 font-medium">generative AI</span>. I enjoy exploring advanced <span className="text-indigo-300 font-medium">LLM applications</span>, <span className="text-lime-300 font-medium">RAG pipelines</span>, and automation systems. On the engineering side, I love building polished frontends with <span className="text-blue-300 font-medium">React</span> and <span className="text-purple-300 font-medium">TailwindCSS</span>, as well as robust backend systems using <span className="text-emerald-300 font-medium">FastAPI</span>. Data structures, problem-solving, and optimization are core to how I approach projects.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
         >
-          My academic focus lies in machine learning, AI agents, and generative AI. I'm particularly interested in building scalable systems using LLMs, RAG pipelines, and intelligent automation.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-        >
-          Beyond academics, I enjoy playing badminton — it helps me maintain balance and energy.
+          One of my big goals is to <span className="text-violet-400 font-semibold">keep learning constantly</span> — staying ahead of the curve and applying what I learn to build solutions that make a difference. Outside tech, you’ll usually find me on the badminton court or vibing to music to reset and refuel 🎧🏸.
         </motion.p>
       </div>
 

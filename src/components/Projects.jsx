@@ -8,14 +8,14 @@ const projectSections = [
     projects: [
       {
         name: 'Virtual Teaching Assistant',
-        description: 'LLM-powered assistant using RAG to answer Tools in Data Science course of IIT Madras queries.',
+        description: 'LLM-powered assistant using RAG to answer IIT Madras course queries.',
         tech: ['LangChain', 'FAISS', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
         github: 'https://github.com/Pratyush8448/Virtual_TA.git',
         demo: '#',
       },
       {
         name: 'TDS Assignment Solver',
-        description: 'LLM-based backend that solves IIT Madras TDS assignments from PDFs using prompt engineering and FastAPI.',
+        description: 'LLM-based backend that solves IIT Madras TDS assignments from PDFs using prompt engineering.',
         tech: ['FastAPI', 'OpenAI API', 'HTTPX', 'Uvicorn', 'PDF Parsing', 'BeautifulSoup'],
         github: 'https://github.com/Pratyush8448/Project2_LLM.git',
         demo: '#',
@@ -27,10 +27,22 @@ const projectSections = [
     projects: [
       {
         name: 'QSAR Fish Toxicity Analysis',
-        description: 'Predicting LC50 toxicity levels using regression and QSAR data.',
+        description: 'Regression-based prediction of LC50 toxicity levels using chemical descriptors.',
         tech: ['Python', 'Pandas', 'Seaborn', 'Scikit-learn', 'EDA', 'GridSearchCV'],
         github: 'https://github.com/Pratyush8448/Pratyush8448-QSAR_FISH_TOXICITY-ANALYSIS.git',
         demo: '#',
+      },
+    ],
+  },
+  {
+    title: '📚 Academic Assignments',
+    projects: [
+      {
+        name: 'Flight Price Prediction – Kaggle Assignment',
+        description: 'Built and compared 7 regression models to predict flight prices using real airline data.',
+        tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
+        github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
+        demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
       },
     ],
   },
@@ -39,7 +51,7 @@ const projectSections = [
     projects: [
       {
         name: 'Portfolio Website',
-        description: 'My personal portfolio website built with React, TailwindCSS, and Framer Motion.',
+        description: 'Futuristic portfolio site built with React, TailwindCSS, Framer Motion, and Lottie.',
         tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Lottie'],
         github: 'https://github.com/Pratyush8448/portfolio-site',
         demo: '#',
@@ -64,7 +76,7 @@ export default function Projects() {
       </motion.h2>
 
       {projectSections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="mb-20">
+        <div key={sectionIndex} className="mb-24">
           <motion.h3
             className="text-2xl font-semibold text-lavender-300 mb-8"
             initial={{ opacity: 0, x: -20 }}
@@ -78,8 +90,8 @@ export default function Projects() {
             {section.projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-white/5 backdrop-blur-md border border-violet-500/30 p-6 rounded-2xl shadow-[0_0_20px_rgba(139,92,246,0.2)] hover:shadow-violet-400/30 transition-all hover:scale-[1.03]"
-                whileHover={{ y: -6 }}
+                className="bg-white/5 backdrop-blur-md border border-violet-500/30 p-6 rounded-2xl shadow-[0_0_20px_rgba(139,92,246,0.2)] hover:shadow-violet-400/30 transition-all hover:-translate-y-2"
+                whileHover={{ scale: 1.03 }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
