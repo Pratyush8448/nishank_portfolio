@@ -11,28 +11,28 @@ import { TbRobotFace } from 'react-icons/tb'
 import { MdOutlineWeb } from 'react-icons/md'
 
 const techSkills = [
-  { name: 'FastAPI', icon: <SiFastapi /> },
-  { name: 'LangChain', icon: <FaLink /> }, // No official icon
-  { name: 'RAG Systems', icon: <TbRobotFace /> },
-  { name: 'OpenAI API', icon: <SiOpenai /> },
-  { name: 'OCR', icon: <FaEye /> }, // Symbolic icon
-  { name: 'Web Scraping', icon: <MdOutlineWeb /> },
-  { name: 'API Testing', icon: <SiPostman /> },
-  { name: 'Software Dev', icon: <FaCogs /> },
-  { name: 'Pandas', icon: <SiPandas /> },
-  { name: 'NumPy', icon: <SiNumpy /> },
-  { name: 'Seaborn' }, // No icon
-  { name: 'Jupyter Notebook', icon: <SiJupyter /> },
-  { name: 'Statistics', icon: <FaChartBar /> },
-  { name: 'Machine Learning', icon: <SiScikitlearn /> },
-  { name: 'AutoCAD', icon: <SiAutocad /> },
+  { name: 'FastAPI', icon: <SiFastapi />, color: '#009688' },
+  { name: 'LangChain', icon: <FaLink />, color: '#4fc3f7' },
+  { name: 'RAG Systems', icon: <TbRobotFace />, color: '#ffb300' },
+  { name: 'OpenAI API', icon: <SiOpenai />, color: '#10a37f' },
+  { name: 'OCR', icon: <FaEye />, color: '#9c27b0' },
+  { name: 'Web Scraping', icon: <MdOutlineWeb />, color: '#3f51b5' },
+  { name: 'API Testing', icon: <SiPostman />, color: '#ff6d00' },
+  { name: 'Software Dev', icon: <FaCogs />, color: '#607d8b' },
+  { name: 'Pandas', icon: <SiPandas />, color: '#150458' },
+  { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
+  { name: 'Seaborn' }, // optional
+  { name: 'Jupyter Notebook', icon: <SiJupyter />, color: '#f37626' },
+  { name: 'Statistics', icon: <FaChartBar />, color: '#4caf50' },
+  { name: 'Machine Learning', icon: <SiScikitlearn />, color: '#f7931e' },
+  { name: 'AutoCAD', icon: <SiAutocad />, color: '#e53935' },
 ]
 
 const programmingLanguages = [
-  { name: 'Python', icon: <FaPython /> },
-  { name: 'C Programming', icon: <FaCuttlefish /> },
-  { name: 'C++', icon: <FaCuttlefish /> },
-  { name: 'Java', icon: <FaJava /> },
+  { name: 'Python', icon: <FaPython />, color: '#306998' },
+  { name: 'C Programming', icon: <FaCuttlefish />, color: '#5c6bc0' },
+  { name: 'C++', icon: <FaCuttlefish />, color: '#1e88e5' },
+  { name: 'Java', icon: <FaJava />, color: '#f44336' },
 ]
 
 export default function Skills() {
@@ -53,15 +53,15 @@ export default function Skills() {
         {techSkills.map((skill, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.1, rotate: 2 }}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
-            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-violet-400 shadow-md hover:shadow-violet-500/50 transition-all"
+            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-white shadow-md hover:shadow-violet-500/50 transition-all"
           >
             {skill.icon ? (
               <>
-                <div className="text-4xl mb-2">{skill.icon}</div>
+                <div className="text-4xl mb-2" style={{ color: skill.color }}>{skill.icon}</div>
                 <p className="text-sm font-medium">{skill.name}</p>
               </>
             ) : (
@@ -81,9 +81,9 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-lavender-300 shadow-md hover:shadow-lavender-300/50 transition-all"
+            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-white shadow-md hover:shadow-lavender-300/50 transition-all"
           >
-            <div className="text-4xl mb-2">{lang.icon}</div>
+            <div className="text-4xl mb-2" style={{ color: lang.color }}>{lang.icon}</div>
             <p className="text-sm font-medium">{lang.name}</p>
           </motion.div>
         ))}
