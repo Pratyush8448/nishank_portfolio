@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import {
   FaPython, FaJava, FaCuttlefish, FaCogs,
-  FaChartBar, FaFileCode, FaLink, FaEye
+  FaChartBar, FaFileCode, FaLink, FaEye, FaDatabase
 } from 'react-icons/fa'
 import {
   SiFastapi, SiOpenai, SiNumpy, SiPandas,
@@ -19,6 +19,7 @@ const techSkills = [
   { name: 'Web Scraping', icon: <MdOutlineWeb />, color: '#3f51b5' },
   { name: 'API Testing', icon: <SiPostman />, color: '#ff6d00' },
   { name: 'Software Dev', icon: <FaCogs />, color: '#607d8b' },
+  { name: 'MySQL', icon: <FaDatabase />, color: '#00758F' },
   { name: 'Pandas', icon: <SiPandas />, color: '#150458' },
   { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
   { name: 'Seaborn' }, // optional
