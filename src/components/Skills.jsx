@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import {
   FaPython, FaJava, FaCuttlefish, FaCogs,
-  FaChartBar, FaFileCode, FaLink, FaEye, FaDatabase
+  FaChartBar, FaFileCode, FaLink, FaEye, FaDatabase,
+  FaFileExcel, FaGithub, FaDocker
 } from 'react-icons/fa'
 import {
   SiFastapi, SiOpenai, SiNumpy, SiPandas,
@@ -27,6 +28,10 @@ const techSkills = [
   { name: 'Statistics', icon: <FaChartBar />, color: '#4caf50' },
   { name: 'Machine Learning', icon: <SiScikitlearn />, color: '#f7931e' },
   { name: 'AutoCAD', icon: <SiAutocad />, color: '#e53935' },
+  { name: 'Microsoft Excel', icon: <FaFileExcel />, color: '#1D6F42' },
+  { name: 'Flourish Studio', icon: <FaFileCode />, color: '#6a1b9a' }, // placeholder icon
+  { name: 'GitHub', icon: <FaGithub />, color: '#f5f5f5' },
+  { name: 'Docker', icon: <FaDocker />, color: '#0db7ed' },
 ]
 
 const programmingLanguages = [
