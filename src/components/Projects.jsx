@@ -46,7 +46,7 @@ const projectSections = [
       },
       {
         name: 'Customer Exit Prediction – Kaggle Assignment',
-        description: 'Predict customer churn for a financial institution using machine learning classification models based on historical customer data.',
+        description: 'Predicted customer churn for a financial institution using machine learning classification models based on historical customer data.',
         tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
         github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
         demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
