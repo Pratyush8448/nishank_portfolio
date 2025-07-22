@@ -40,9 +40,16 @@ const projectSections = [
       {
         name: 'Flight Price Prediction – Kaggle Assignment',
         description: 'Built and compared 7 regression models to predict flight prices using real airline data.',
-        tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
+        tech: ['Python', 'Scikit-learn', 'RandomForest', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
         github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
         demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
+      },
+      {
+        name: 'Customer Exit Prediction – Kaggle Assignment',
+        description: 'Predict customer churn for a financial institution using machine learning classification models based on historical customer data.',
+        tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
+        github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
+        demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
       },
     ],
   },
