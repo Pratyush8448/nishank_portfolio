@@ -58,7 +58,7 @@ const projectSections = [
     projects: [
       {
         name: 'Portfolio Website',
-        description: 'Futuristic portfolio site built with React, TailwindCSS, Framer Motion, and Lottie.',
+        description: 'Portfolio website built with React, TailwindCSS, Framer Motion, and Lottie.',
         tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Lottie'],
         github: 'https://github.com/Pratyush8448/portfolio-site',
         demo: '#',
@@ -69,14 +69,14 @@ const projectSections = [
   title: '⚙️ DevOps Projects',
   projects: [
     {
-      name: 'Task 1: CodePipeline using Terraform',
+      name: 'CodePipeline using Terraform',
       description: 'Provisioned AWS CodePipeline, CodeBuild, and CodeDeploy with IAM roles, S3, and tested modules using Terratest.',
       tech: ['AWS CodePipeline', 'Terraform', 'CodeBuild', 'CodeDeploy', 'EC2', 'S3', 'IAM', 'Terratest'],
       github: 'https://github.com/Pratyush8448/Devops_Project.git',
       demo: '#',
     },
     {
-      name: 'Task 2: DevSecOps with GitHub Actions & Sealed Secrets',
+      name: 'DevSecOps with GitHub Actions & Sealed Secrets',
       description: 'Automated CI/CD with GitHub Actions, tfsec, Trivy scans, and Sealed Secrets integration for secure Kubernetes deployments.',
       tech: ['GitHub Actions', 'tfsec', 'Trivy', 'Kubernetes', 'Sealed Secrets'],
       github: 'https://github.com/Pratyush8448/Devops_Task-02.git',
