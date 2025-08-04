@@ -77,14 +77,6 @@ export default function Hero() {
             <FaCode /> View Projects
           </a>
 
-          {/* Download Resume */}
-          <a
-            href=""
-            download
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-violet-400 text-violet-300 hover:bg-violet-500 hover:text-black transition-all shadow-lg"
-          >
-            <FaDownload /> Resume
-          </a>
 
           {/* Contact Me */}
           <a
