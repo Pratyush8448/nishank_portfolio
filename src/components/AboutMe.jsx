@@ -51,12 +51,12 @@ export default function AboutMe() {
         className="mt-12"
       >
         <a
-          href="/resume.pdf"
+          href="https://nishank-resume.vercel.app/"
           download
           className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-violet-500 text-black font-semibold shadow-md hover:bg-violet-400 transition-all duration-300"
         >
           <FaDownload className="text-lg" />
-          Download Resume
+          Resume
         </a>
       </motion.div>
     </section>
