@@ -7,6 +7,31 @@ const projectSections = [
     title: '🧠 AI Projects',
     projects: [
       {
+  name: 'Data Analyst LLM Agent',
+  description:
+    'Autonomous agent that processes natural-language data tasks, fetches/scrapes data, reads Parquet/CSV/Excel/PDF/DOCX, performs DuckDB/Pandas-based analysis, generates plots, and returns structured JSON insights.',
+  tech: [
+    'FastAPI',
+    'Python',
+    'LangChain',
+    'Google Gemini API',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Seaborn',
+    'Requests',
+    'Pillow',
+    'PyPDF2',
+    'python-docx',
+    'OpenPyXL',
+    'Parquet / PyArrow',
+    'dotenv'
+  ],
+  github: 'https://github.com/Pratyush8448/Data_Analysist',
+  demo: '#',
+},
+ 
+      {
         name: 'Virtual Teaching Assistant',
         description: 'LLM-powered assistant using RAG to answer IIT Madras course queries.',
         tech: ['LangChain', 'FAISS', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
