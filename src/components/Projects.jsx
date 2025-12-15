@@ -9,7 +9,7 @@ const projectSections = [
       {
   name: 'Data Analyst LLM Agent',
   description:
-    'Autonomous agent that processes natural-language data tasks, fetches/scrapes data, reads Parquet/CSV/Excel/PDF/DOCX, performs DuckDB/Pandas-based analysis, generates plots, and returns structured JSON insights.',
+    'An AI-powered automation agent to perform data analysis through natural language queries. Integrated Large Language Models with Python and FastAPI to interpret requests, process datasets, and generate actionable insights including summaries, trends, and visualizations. Designed seamless interaction and testing via Postman, and deployed the system on Render for scalable access. Showcased end-to-end automation of analyst workflows, reducing manual effort and accelerating data-driven decision-making.',
   tech: [
     'FastAPI',
     'Python',
