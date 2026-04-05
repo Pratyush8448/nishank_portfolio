@@ -12,7 +12,7 @@ export default function Loader({ onFinish }) {
 
     const timer = setTimeout(() => {
       onFinish()
-    }, 1100) // 🔥 tighter total duration
+    }, 900) // 🔥 EXACT match with animation timeline
 
     return () => clearTimeout(timer)
   }, [onFinish])
@@ -23,21 +23,21 @@ export default function Loader({ onFinish }) {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 0.8, duration: 0.3 }}
+      transition={{ delay: 0.6, duration: 0.3 }} // 🔥 fade starts right after last word
       className="fixed inset-0 z-[9999] bg-[#0e0018] flex items-center justify-center pointer-events-none"
     >
       <div className="text-3xl md:text-5xl font-extrabold flex gap-3">
         {words.map((word, index) => (
           <motion.span
             key={word}
-            initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+            initial={{ opacity: 0, y: 25, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
               delay: index * 0.2,
-              duration: 0.5,
-              ease: [0.22, 1, 0.36, 1], 
+              duration: 0.35,
+              ease: [0.22, 1, 0.36, 1],
             }}
-            className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(236,72,153,0.4)]"
+            className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent"
           >
             {word}
           </motion.span>
