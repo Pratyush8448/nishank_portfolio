@@ -33,8 +33,8 @@ export default function Loader({ onFinish }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: index * 0.4, // stagger effect
-              duration: 0.5,
+              delay: index * 0.25, // stagger effect
+              duration: 0.35,
               ease: "easeOut"
             }}
             className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent"
