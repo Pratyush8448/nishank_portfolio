@@ -8,22 +8,31 @@ import Skills from './components/Skills'
 import Journey from './components/Journey'
 import Contact from './components/ContactForm'
 
+import ThemeToggle from './components/ThemeToggle'
+import { useTheme } from './theme'
+
 function App() {
   const [loading, setLoading] = useState(true)
+
+  useTheme() // 🔥 activate theme system
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 2800) // Splash lasts ~2.8s
+    }, 1200) // 🔥 reduced (better UX + SEO)
+
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <>
       {loading ? (
-        <Loader />
+        <Loader onFinish={() => setLoading(false)} />
       ) : (
-        <main className="bg-black text-white min-h-screen font-inter">
+        <main className="bg-white text-black dark:bg-[#0e0018] dark:text-white min-h-screen font-inter transition-colors duration-300">
+
+          <ThemeToggle />
+
           <Navbar />
 
           <section id="home">
@@ -49,6 +58,7 @@ function App() {
           <section id="contact">
             <Contact />
           </section>
+
         </main>
       )}
     </>

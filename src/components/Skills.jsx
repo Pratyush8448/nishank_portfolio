@@ -23,14 +23,14 @@ const techSkills = [
   { name: 'MySQL', icon: <FaDatabase />, color: '#00758F' },
   { name: 'Pandas', icon: <SiPandas />, color: '#150458' },
   { name: 'NumPy', icon: <SiNumpy />, color: '#013243' },
-  { name: 'Seaborn' }, // optional
+  { name: 'Seaborn' },
   { name: 'Jupyter Notebook', icon: <SiJupyter />, color: '#f37626' },
   { name: 'Statistics', icon: <FaChartBar />, color: '#4caf50' },
   { name: 'Machine Learning', icon: <SiScikitlearn />, color: '#f7931e' },
   { name: 'AutoCAD', icon: <SiAutocad />, color: '#e53935' },
   { name: 'Microsoft Excel', icon: <FaFileExcel />, color: '#1D6F42' },
-  { name: 'Flourish Studio', icon: <FaFileCode />, color: '#6a1b9a' }, // placeholder icon
-  { name: 'GitHub', icon: <FaGithub />, color: '#f5f5f5' },
+  { name: 'Flourish Studio', icon: <FaFileCode />, color: '#6a1b9a' },
+  { name: 'GitHub', icon: <FaGithub />, color: '#000000' },
   { name: 'Docker', icon: <FaDocker />, color: '#0db7ed' },
 ]
 
@@ -43,18 +43,23 @@ const programmingLanguages = [
 
 export default function Skills() {
   return (
-    <section className="py-20 px-6 bg-[#14001f] text-center">
+    <section className="py-20 px-6 bg-white dark:bg-[#14001f] text-center text-black dark:text-white transition-colors duration-300">
+
+      {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-lavender-300 mb-12"
+        className="text-4xl font-bold text-violet-500 dark:text-lavender-300 mb-12"
       >
         My Tech Stack
       </motion.h2>
 
-      {/* Tools & Tech Section */}
-      <h3 className="text-2xl font-semibold text-violet-400 mb-6">AI / Dev Tools</h3>
+      {/* Tools */}
+      <h3 className="text-2xl font-semibold text-violet-600 dark:text-violet-400 mb-6">
+        AI / Dev Tools
+      </h3>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-16">
         {techSkills.map((skill, index) => (
           <motion.div
@@ -63,11 +68,17 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
-            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-white shadow-md hover:shadow-violet-500/50 transition-all"
+            className="flex flex-col items-center justify-center 
+            bg-gray-100 dark:bg-[#1f0030] 
+            p-4 rounded-xl 
+            text-black dark:text-white 
+            shadow-md hover:shadow-violet-500/50 transition-all"
           >
             {skill.icon ? (
               <>
-                <div className="text-4xl mb-2" style={{ color: skill.color }}>{skill.icon}</div>
+                <div className="text-4xl mb-2" style={{ color: skill.color }}>
+                  {skill.icon}
+                </div>
                 <p className="text-sm font-medium">{skill.name}</p>
               </>
             ) : (
@@ -77,8 +88,11 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Programming Languages Section */}
-      <h3 className="text-2xl font-semibold text-violet-400 mb-6">Programming Languages</h3>
+      {/* Languages */}
+      <h3 className="text-2xl font-semibold text-violet-600 dark:text-violet-400 mb-6">
+        Programming Languages
+      </h3>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
         {programmingLanguages.map((lang, index) => (
           <motion.div
@@ -87,13 +101,20 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="flex flex-col items-center justify-center bg-[#1f0030] p-4 rounded-xl text-white shadow-md hover:shadow-lavender-300/50 transition-all"
+            className="flex flex-col items-center justify-center 
+            bg-gray-100 dark:bg-[#1f0030] 
+            p-4 rounded-xl 
+            text-black dark:text-white 
+            shadow-md hover:shadow-lavender-300/50 transition-all"
           >
-            <div className="text-4xl mb-2" style={{ color: lang.color }}>{lang.icon}</div>
+            <div className="text-4xl mb-2" style={{ color: lang.color }}>
+              {lang.icon}
+            </div>
             <p className="text-sm font-medium">{lang.name}</p>
           </motion.div>
         ))}
       </div>
+
     </section>
   )
 }

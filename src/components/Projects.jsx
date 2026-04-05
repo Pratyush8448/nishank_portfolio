@@ -122,10 +122,11 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black text-white py-20 px-6 min-h-screen"
+      className="bg-white dark:bg-black text-black dark:text-white py-20 px-6 min-h-screen transition-colors duration-300"
     >
+      {/* Heading */}
       <motion.h2
-        className="text-4xl font-bold text-violet-400 text-center mb-16"
+        className="text-4xl font-bold text-violet-500 dark:text-violet-400 text-center mb-16"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -135,8 +136,10 @@ export default function Projects() {
 
       {projectSections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-24">
+
+          {/* Section Title */}
           <motion.h3
-            className="text-2xl font-semibold text-lavender-300 mb-8"
+            className="text-2xl font-semibold text-violet-600 dark:text-lavender-300 mb-8"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 * sectionIndex }}
@@ -144,47 +147,81 @@ export default function Projects() {
             {section.title}
           </motion.h3>
 
+          {/* Grid */}
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
             {section.projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-white/5 backdrop-blur-md border border-violet-500/30 p-6 rounded-2xl shadow-[0_0_20px_rgba(139,92,246,0.2)] hover:shadow-violet-400/30 transition-all hover:-translate-y-2"
+                className="bg-gray-100 dark:bg-white/5 
+                backdrop-blur-md 
+                border border-gray-300 dark:border-violet-500/30 
+                p-6 rounded-2xl 
+                shadow-md dark:shadow-[0_0_20px_rgba(139,92,246,0.2)] 
+                hover:shadow-lg dark:hover:shadow-violet-400/30 
+                transition-all hover:-translate-y-2"
                 whileHover={{ scale: 1.03 }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
-                <h4 className="text-xl font-bold text-violet-300 mb-2">
+                {/* Title */}
+                <h4 className="text-xl font-bold text-violet-600 dark:text-violet-300 mb-2">
                   {project.name}
                 </h4>
-                <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+
+                {/* Description */}
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+                  {project.description}
+                </p>
+
+                {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="text-xs bg-violet-400/10 text-violet-300 px-2 py-1 rounded-md border border-violet-400/20"
+                      className="text-xs 
+                      bg-violet-100 dark:bg-violet-400/10 
+                      text-violet-700 dark:text-violet-300 
+                      px-2 py-1 rounded-md 
+                      border border-violet-300 dark:border-violet-400/20"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
+
+                {/* Buttons */}
                 <div className="flex gap-4 mt-2">
+
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 text-sm text-violet-300 hover:text-white border border-violet-400 hover:bg-violet-500 px-3 py-1.5 rounded-md transition"
+                    className="flex items-center gap-2 text-sm 
+                    text-violet-600 dark:text-violet-300 
+                    hover:text-white 
+                    border border-violet-400 
+                    hover:bg-violet-500 
+                    px-3 py-1.5 rounded-md transition"
                   >
                     <FaGithub /> Code
                   </a>
+
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 text-sm text-violet-300 hover:text-white border border-violet-400 hover:bg-violet-500 px-3 py-1.5 rounded-md transition"
+                    className="flex items-center gap-2 text-sm 
+                    text-violet-600 dark:text-violet-300 
+                    hover:text-white 
+                    border border-violet-400 
+                    hover:bg-violet-500 
+                    px-3 py-1.5 rounded-md transition"
                   >
                     <FaExternalLinkAlt /> Demo
                   </a>
+
                 </div>
               </motion.div>
             ))}
