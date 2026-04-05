@@ -25,6 +25,10 @@ export default function Hero() {
         className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-violet-500 shadow-[0_0_25px_rgba(139,92,246,0.8)] mb-6 md:mb-0 md:mr-10 z-10"
       />
 
+      <p style={{ display: "none" }}>
+        Pratyush Nishank portfolio website for Data Science, Machine Learning, and AI projects.
+      </p>
+      
       {/* Hero text */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
