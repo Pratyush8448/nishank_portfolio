@@ -25,10 +25,6 @@ export default function Hero() {
         className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-violet-500 shadow-[0_0_25px_rgba(139,92,246,0.8)] mb-6 md:mb-0 md:mr-10 z-10"
       />
 
-      <p style={{ display: "none" }}>
-        Pratyush Nishank portfolio website for Data Science, Machine Learning, and AI projects.
-      </p>
-      
       {/* Hero text */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -39,23 +35,33 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="text-2xl md:text-3xl text-lavender-300 mb-2 tracking-wide"
+        >
+          Hi, I’m
+        </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 1 }}
           className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight"
         >
           <span className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-lg">
-            Pratyush Nishank
+            Pratyush
           </span>{' '}
-          <span className="text-white drop-shadow-md">Portfolio</span>
-        </motion.h1>
-        
+          <span className="text-white drop-shadow-md">Nishank</span>
+        </motion.h2>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.8, duration: 1 }}
           className="text-lg md:text-xl mt-4 text-gray-300"
         >
-          I am Pratyush Nishank, a Data Science and Machine Learning enthusiast building AI-powered applications.
+          Decoding Data · Building AI · Living Tech
         </motion.p>
+
         {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
