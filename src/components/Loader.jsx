@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import Lottie from 'lottie-react'
-import animationData from '../assets/loader.json'
 
 export default function Loader({ onFinish }) {
   useEffect(() => {
@@ -14,40 +12,37 @@ export default function Loader({ onFinish }) {
 
     const timer = setTimeout(() => {
       onFinish()
-    }, 800) // 🔥 reduced from 3000ms
+    }, 1800) // enough to show all words
 
     return () => clearTimeout(timer)
   }, [onFinish])
+
+  const words = ["Pratyush", "Pulak", "Nishank"]
 
   return (
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 0.5, duration: 0.4 }} // 🔥 faster fade
-      className="fixed inset-0 z-[9999] bg-[#0e0018] flex flex-col items-center justify-center"
+      transition={{ delay: 1.4, duration: 0.4 }}
+      className="fixed inset-0 z-[9999] bg-[#0e0018] flex items-center justify-center"
     >
-      {/* Lottie Animation */}
-      <div className="w-56 h-56">
-        <Lottie animationData={animationData} loop />
+      <div className="text-3xl md:text-5xl font-extrabold flex gap-3">
+        {words.map((word, index) => (
+          <motion.span
+            key={word}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: index * 0.4, // stagger effect
+              duration: 0.5,
+              ease: "easeOut"
+            }}
+            className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent"
+          >
+            {word}
+          </motion.span>
+        ))}
       </div>
-
-      {/* Name Text (helps branding, minimal SEO value) */}
-      <motion.div
-        initial={{ scale: 0.95, opacity: 0 }}
-        animate={{
-          scale: [1, 1.05, 1],
-          opacity: [0, 1, 1],
-        }}
-        transition={{
-          duration: 1.2,
-          delay: 0.3,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-        className="mt-5 text-xl font-bold bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent"
-      >
-        Pratyush Nishank
-      </motion.div>
     </motion.div>
   )
 }
