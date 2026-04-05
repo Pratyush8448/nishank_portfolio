@@ -12,37 +12,29 @@ export default function Loader({ onFinish }) {
 
     const timer = setTimeout(() => {
       onFinish()
-    }, 1800) // enough to show all words
+    }, 900) // 🔥 tight + premium timing
 
     return () => clearTimeout(timer)
   }, [onFinish])
-
-  const words = ["Pratyush", "Pulak", "Nishank"]
 
   return (
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ delay: 1.4, duration: 0.4 }}
-      className="fixed inset-0 z-[9999] bg-[#0e0018] flex items-center justify-center"
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.4 }}
+      className="fixed inset-0 z-[9999] bg-black flex items-center justify-center pointer-events-none"
     >
-      <div className="text-3xl md:text-5xl font-extrabold flex gap-3">
-        {words.map((word, index) => (
-          <motion.span
-            key={word}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: index * 0.3, 
-              duration: 0.3,
-              ease: "easeOut"
-            }}
-            className="bg-gradient-to-r from-violet-400 via-pink-500 to-fuchsia-400 bg-clip-text text-transparent"
-          >
-            {word}
-          </motion.span>
-        ))}
-      </div>
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          ease: [0.22, 1, 0.36, 1], // 🔥 Apple-like easing
+        }}
+        className="text-3xl md:text-5xl font-semibold tracking-wide text-white"
+      >
+        Pratyush Nishank
+      </motion.h1>
     </motion.div>
   )
 }
