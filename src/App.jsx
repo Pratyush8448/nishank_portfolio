@@ -8,7 +8,7 @@ import Skills from './components/Skills'
 import Journey from './components/Journey'
 import Contact from './components/ContactForm'
 import Spaceship from "./components/Spaceship";
-
+import GithubStats from "./components/GithubStats"; 
 
 import ThemeToggle from './components/ThemeToggle'
 import { useTheme } from './theme'
@@ -48,6 +48,10 @@ function App() {
 
           <section id="projects">
             <Projects />
+          </section>
+
+          <section id="github">
+            <GithubStats />
           </section>
 
           <section id="skills">
