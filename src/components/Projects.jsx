@@ -48,43 +48,38 @@ const projectSections = [
     ],
   },
   {
-    title: '📊 Machine Learning Projects',
-    projects: [
-      {
-        name: 'QSAR Fish Toxicity Analysis',
-        description: 'Regression-based prediction of LC50 toxicity levels using chemical descriptors.',
-        tech: ['Python', 'Pandas', 'Seaborn', 'Scikit-learn', 'EDA', 'GridSearchCV'],
-        github: 'https://github.com/Pratyush8448/Pratyush8448-QSAR_FISH_TOXICITY-ANALYSIS.git',
-        demo: '#',
-      },
-    ],
-  },
-  {
-    title: '📚 Academic Assignments',
-    projects: [
-      {
-        name: 'Flight Price Prediction – Kaggle Assignment',
-        description: 'Built and compared 7 regression models to predict flight prices using real airline data.',
-        tech: ['Python', 'Scikit-learn', 'RandomForest', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
-        github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
-        demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
-      },
-      {
-      name: 'Eatery Rating Prediction – Kaggle Assignment',
-      description: 'Developed and compared multiple machine learning classification models (Logistic Regression, Random Forest, SGD, KNN, Linear SVC, Passive Aggressive, and Decision Tree) to predict customer ratings for eateries based on features and reviews. Conducted exploratory data analysis, feature engineering, and evaluated model performance.',
+  title: '📊 Machine Learning Projects',
+  projects: [
+    {
+      name: 'QSAR Fish Toxicity Analysis',
+      description: 'Regression-based prediction of LC50 toxicity levels using chemical descriptors.',
+      tech: ['Python', 'Pandas', 'Seaborn', 'Scikit-learn', 'EDA', 'GridSearchCV'],
+      github: 'https://github.com/Pratyush8448/Pratyush8448-QSAR_FISH_TOXICITY-ANALYSIS.git',
+      demo: '#',
+    },
+    {
+      name: 'Flight Price Prediction',
+      description: 'Built and compared multiple regression models to predict flight prices using real airline data.',
+      tech: ['Python', 'Scikit-learn', 'RandomForest', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
+      github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
+      demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
+    },
+    {
+      name: 'Eatery Rating Prediction',
+      description: 'Developed and compared multiple ML classification models to predict customer ratings using features and reviews.',
       tech: ['Python', 'Pandas', 'Scikit-learn', 'EDA', 'Logistic Regression', 'Random Forest', 'KNN', 'SVM', 'Model Evaluation'],
       github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-3',
       demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-3',
-      },
-      {
-      name: 'Customer Exit Prediction – Kaggle Assignment',
-      description: 'Predicted customer churn for a financial institution using machine learning classification models based on historical customer data.',
+    },
+    {
+      name: 'Customer Exit Prediction',
+      description: 'Predicted customer churn for a financial institution using classification models on historical data.',
       tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
       github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
       demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
-      },
-    ],
-  },
+    },
+  ],
+},
   {
     title: '🌐 Web Development Projects',
     projects: [

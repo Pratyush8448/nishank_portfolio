@@ -7,6 +7,8 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Journey from './components/Journey'
 import Contact from './components/ContactForm'
+import Spaceship from "./components/Spaceship";
+
 
 import ThemeToggle from './components/ThemeToggle'
 import { useTheme } from './theme'
@@ -31,7 +33,8 @@ function App() {
       ) : (
         <main className="bg-white text-black dark:bg-[#0e0018] dark:text-white min-h-screen font-inter transition-colors duration-300">
 
-          <ThemeToggle />
+          <Spaceship />
+
 
           <Navbar />
 
