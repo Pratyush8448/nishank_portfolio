@@ -29,7 +29,7 @@ const projectSections = [
     ],
   },
   {
-    title: 'Machine Learning Projects',
+    title: 'ML Projects',
     accent: '#34d399',
     projects: [
       {
