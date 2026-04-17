@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 // --- Project Data Categorized ---
 const projectSections = [
   {
-    title: '🧠 AI Projects',
+    title: 'AI Projects',
     accent: '#a78bfa',
     projects: [
       {
@@ -21,48 +21,41 @@ const projectSections = [
       },
       {
         name: 'Virtual Teaching Assistant',
-        description: 'LLM-powered assistant using RAG to answer IIT Madras course queries.',
+        description: 'Developed a virtual Teaching Assistant API for IIT Madras’ Tools in Data Science course, integrating scraped course content and Discourse discussions. Implemented NLP-based question answering with support for text and image queries, returning structured JSON responses with relevant reference links.',
         tech: ['LangChain', 'FAISS', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
         github: 'https://github.com/Pratyush8448/Virtual_TA.git',
-        demo: '#',
-      },
-      {
-        name: 'TDS Assignment Solver',
-        description: 'LLM-based backend that solves IIT Madras TDS assignments from PDFs using prompt engineering.',
-        tech: ['FastAPI', 'OpenAI API', 'HTTPX', 'Uvicorn', 'PDF Parsing', 'BeautifulSoup'],
-        github: 'https://github.com/Pratyush8448/Project2_LLM.git',
         demo: '#',
       },
     ],
   },
   {
-    title: '📊 Machine Learning Projects',
+    title: 'Machine Learning Projects',
     accent: '#34d399',
     projects: [
       {
         name: 'QSAR Fish Toxicity Analysis',
-        description: 'Regression-based prediction of LC50 toxicity levels using chemical descriptors.',
+        description: 'Developed a QSAR-based regression model to predict fish toxicity (LC50) using molecular descriptors. Applied preprocessing, outlier handling, statistical testing, and multiple models with hyperparameter tuning to evaluate and improve predictive performance.',
         tech: ['Python', 'Pandas', 'Seaborn', 'Scikit-learn', 'EDA', 'GridSearchCV'],
         github: 'https://github.com/Pratyush8448/Pratyush8448-QSAR_FISH_TOXICITY-ANALYSIS.git',
         demo: '#',
       },
       {
         name: 'Flight Price Prediction',
-        description: 'Built and compared multiple regression models to predict flight prices using real airline data.',
+        description: 'Built a regression model to predict flight ticket prices using features like airline, route, duration, and days left. Applied preprocessing, feature engineering, and model tuning for accurate predictions on Kaggle data.',
         tech: ['Python', 'Scikit-learn', 'RandomForest', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
         github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
         demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-1',
       },
       {
         name: 'Eatery Rating Prediction',
-        description: 'Developed and compared multiple ML classification models to predict customer ratings using features and reviews.',
+        description: 'Built a rating prediction model for eateries using features like store name, category, location (latitude/longitude), review text, and rating count. Applied preprocessing, NLP, and machine learning to predict customer ratings.',
         tech: ['Python', 'Pandas', 'Scikit-learn', 'EDA', 'Logistic Regression', 'Random Forest', 'KNN', 'SVM', 'Model Evaluation'],
         github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-3',
         demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-3',
       },
       {
         name: 'Customer Exit Prediction',
-        description: 'Predicted customer churn for a financial institution using classification models on historical data.',
+        description: 'Developed a customer churn prediction model using features like country, gender, credit score, age, account balance, and activity status. Performed preprocessing, feature engineering, and applied machine learning to predict customer exit behavior.',
         tech: ['Python', 'Scikit-learn', 'XGBoost', 'EDA', 'OneHotEncoding', 'GridSearchCV', 'Model Evaluation'],
         github: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
         demo: 'https://www.kaggle.com/code/pratyushpulaknishank/23f2002286-kaggle-02',
@@ -70,7 +63,7 @@ const projectSections = [
     ],
   },
   {
-    title: '🌐 Web Development Projects',
+    title: 'Web Development Projects',
     accent: '#60a5fa',
     projects: [
       {
@@ -83,7 +76,7 @@ const projectSections = [
     ],
   },
   {
-    title: '⚙️ DevOps Projects',
+    title: 'DevOps Projects',
     accent: '#f97316',
     projects: [
       {
