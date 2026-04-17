@@ -63,7 +63,7 @@ const projectSections = [
     ],
   },
   {
-    title: 'Web Development Projects',
+    title: 'Web Dev',
     accent: '#60a5fa',
     projects: [
       {
