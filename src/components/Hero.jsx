@@ -32,7 +32,7 @@ export default function Hero() {
     if (newCount === 4) {
       console.log("Lets go")
     }
-    if (newCount === 5) {
+    if (newCount === 3) {
       audioRef.current.volume = 0.15
       audioRef.current.play().catch(err => console.log(err))
       setClickCount(0)
