@@ -378,18 +378,6 @@ export default function Hero() {
           />
         </div>
 
-        {/* ── Status badge ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-          className="mt-5 flex items-center gap-2 px-4 py-2 rounded-full"
-          style={{
-            background: 'rgba(139,92,246,0.1)',
-            border: '1px solid rgba(139,92,246,0.25)',
-          }}
-        >
-        </motion.div>
       </div>
 
       {/* Hidden audio */}
