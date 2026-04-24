@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 1200) // 🔥 reduced (better UX + SEO)
+    }, 2800) // 🔥 reduced (better UX + SEO)
 
     return () => clearTimeout(timer)
   }, [])
