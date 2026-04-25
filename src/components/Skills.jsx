@@ -177,7 +177,7 @@ export default function Skills() {
         >
           <h2 className="main-title">My Tech Stack</h2>
           <div className="title-bar" />
-          <p className="scroll-hint">// skills &amp; technologies</p>
+        
         </motion.div>
 
         {/* ── Web Dev ── */}
