@@ -45,7 +45,7 @@ export default function AboutMe() {
             transition={{ duration: 0.6 }}
             className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed -mt-6"
           >
-            I'm <span className="font-semibold text-gray-900 dark:text-white">Pratyush Nishank</span> from Odisha — a curious builder who loves exploring how things actually work. I'm interested in generative AI, data science, and intelligent systems, always learning, experimenting, and refining ideas. When I'm not building, you'll find me on a badminton court or thinking through the next thing to create.
+            I'm <span className="font-semibold text-gray-900 dark:text-white">Pratyush Nishank</span> from Odisha — a curious human who loves exploring how things actually work. I'm interested in generative AI, data science, and intelligent systems, always learning, experimenting, and refining ideas. When I'm not building, you'll find me on a badminton court or thinking through the next thing to create.
           </motion.p>
 
           <motion.p
