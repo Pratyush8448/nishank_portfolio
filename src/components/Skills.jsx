@@ -231,7 +231,7 @@ export default function Skills() {
         {/* ── Tools & Infra ── */}
         <div className="section-block">
           <SectionLabel icon={<FaDocker style={{ color: '#0db7ed' }} />}>
-            Tools &amp; Infrastructure
+            Tools
           </SectionLabel>
           <motion.div
             className="card-grid card-grid--wide"
