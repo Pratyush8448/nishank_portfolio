@@ -17,14 +17,14 @@ const projectSections = [
           'PyPDF2', 'python-docx', 'OpenPyXL', 'Parquet / PyArrow', 'dotenv'
         ],
         github: 'https://github.com/Pratyush8448/Data_Analysist',
-        demo: '#',
+        demo: 'https://data-analyst-agent-cl2b.onrender.com',
       },
       {
         name: 'Virtual Teaching Assistant',
         description: 'Developed a virtual Teaching Assistant API for IIT Madras’ Tools in Data Science course, integrating scraped course content and Discourse discussions. Implemented NLP-based question answering with support for text and image queries, returning structured JSON responses with relevant reference links.',
         tech: ['LangChain', 'FAISS', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
         github: 'https://github.com/Pratyush8448/Virtual_TA.git',
-        demo: 'https://data-analyst-agent-cl2b.onrender.com',
+        demo: '#',
       },
     ],
   },
