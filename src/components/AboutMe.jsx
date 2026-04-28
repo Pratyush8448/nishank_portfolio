@@ -4,9 +4,9 @@ import { FaDownload } from 'react-icons/fa'
 
 const NEWS_ITEMS = [
   'Data Analyst Agent deployed — visit Projects for a live demo ↗',
-  'Currently exploring a book - Introduction to LLMs by Orielly Publication ',
-  'New full-stack web project in progress — stay tuned for the drop',
-  
+  'Currently exploring multi-modal AI pipelines and intelligent agents',
+  'New RAG-based project in progress — stay tuned for the drop',
+  'Open to interesting conversations — reach out via Contact ↗',
 ]
 
 function NewsTicker() {
@@ -15,33 +15,35 @@ function NewsTicker() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
-    }, 5000)
+    }, 8000)
     return () => clearInterval(interval)
   }, [])
 
   return (
     <div className="flex items-center w-full overflow-hidden rounded-lg border border-violet-500/20 bg-violet-50/50 dark:bg-violet-500/5 mb-8">
       {/* LIVE */}
-      <div className="flex items-center gap-1.5 px-3 py-2 bg-red-500 flex-shrink-0">
+      <div className="flex items-center gap-1.5 px-3 py-2.5 bg-red-500 flex-shrink-0">
         <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
         <span className="text-[10px] font-bold tracking-widest text-white uppercase font-mono">LIVE</span>
       </div>
 
       {/* UPDATES */}
-      <div className="flex items-center px-3 py-2 bg-violet-600 flex-shrink-0">
+      <div className="flex items-center px-3 py-2.5 bg-violet-600 flex-shrink-0">
         <span className="text-[10px] font-bold tracking-widest text-white uppercase font-mono">Updates</span>
       </div>
 
       {/* Sliding news text */}
-      <div className="flex-1 overflow-hidden relative h-8 flex items-center">
+      <div className="flex-1 overflow-hidden relative h-9 flex items-center">
         <AnimatePresence mode="wait">
           <motion.p
             key={index}
-            initial={{ x: '100%', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '-100%', opacity: 0 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className="absolute px-4 text-xs text-gray-600 dark:text-gray-300 font-mono whitespace-nowrap"
+            initial={{ x: '100%' }}
+            animate={{ x: '-100%' }}
+            transition={{
+              duration: 12,
+              ease: 'linear',
+            }}
+            className="absolute whitespace-nowrap px-4 text-xs text-gray-600 dark:text-gray-300 font-mono"
           >
             {NEWS_ITEMS[index]}
           </motion.p>
