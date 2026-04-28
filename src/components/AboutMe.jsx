@@ -1,5 +1,52 @@
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaDownload } from 'react-icons/fa'
+
+const NEWS_ITEMS = [
+  'Data Analyst Agent deployed — visit Projects for a live demo ↗',
+  'Currently exploring hands on LLMs by O'Reilly publications.',
+  'New full-stack project in progress — stay tuned for the app',
+  'Open to interesting conversations — reach out via Contact ↗',
+]
+
+function NewsTicker() {
+  const [index, setIndex] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false)
+      setTimeout(() => {
+        setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
+        setVisible(true)
+      }, 400)
+    }, 5000)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <div className="flex items-center w-full overflow-hidden rounded-lg border border-violet-500/20 bg-violet-50/50 dark:bg-violet-500/5 mb-8">
+      {/* LIVE */}
+      <div className="flex items-center gap-1.5 px-3 py-2 bg-red-500 flex-shrink-0">
+        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+        <span className="text-[10px] font-bold tracking-widest text-white uppercase font-mono">LIVE</span>
+      </div>
+
+      {/* UPDATES */}
+      <div className="flex items-center px-3 py-2 bg-violet-600 flex-shrink-0">
+        <span className="text-[10px] font-bold tracking-widest text-white uppercase font-mono">Updates</span>
+      </div>
+
+      {/* News text */}
+      <p
+        className="flex-1 px-4 text-xs text-gray-600 dark:text-gray-300 font-mono whitespace-nowrap overflow-hidden text-ellipsis transition-opacity duration-300"
+        style={{ opacity: visible ? 1 : 0 }}
+      >
+        {NEWS_ITEMS[index]}
+      </p>
+    </div>
+  )
+}
 
 export default function AboutMe() {
   return (
@@ -32,6 +79,9 @@ export default function AboutMe() {
         <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-violet-500/30 via-indigo-500/20 to-transparent dark:from-violet-500/20 dark:via-indigo-500/10 blur-sm pointer-events-none" />
 
         <div className="relative rounded-3xl bg-white/90 dark:bg-white/[0.03] backdrop-blur-xl border border-violet-200/60 dark:border-violet-500/15 p-8 md:p-12 text-left space-y-6">
+
+          {/* News Ticker */}
+          <NewsTicker />
 
           {/* Decorative quote mark */}
           <span className="text-6xl leading-none text-violet-300/50 dark:text-violet-500/30 font-serif select-none">
@@ -69,7 +119,6 @@ export default function AboutMe() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="flex flex-col sm:flex-row items-center gap-4 pt-2"
           >
-
             <motion.a
               href="https://nishank-resume.vercel.app/"
               download
@@ -89,7 +138,6 @@ export default function AboutMe() {
             >
               Contact Me
             </motion.a>
-
           </motion.div>
 
         </div>
