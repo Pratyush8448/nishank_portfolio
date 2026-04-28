@@ -1,25 +1,20 @@
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { FaDownload } from 'react-icons/fa'
 
 const NEWS_ITEMS = [
   'Data Analyst Agent deployed — visit Projects for a live demo ↗',
-  'Currently exploring hands on LLMs by O,Reilly publications.',
-  'New full-stack project in progress — stay tuned for the app',
+  'Currently exploring multi-modal AI pipelines and intelligent agents',
+  'New RAG-based project in progress — stay tuned for the drop',
   'Open to interesting conversations — reach out via Contact ↗',
 ]
 
 function NewsTicker() {
   const [index, setIndex] = useState(0)
-  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setVisible(false)
-      setTimeout(() => {
-        setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
-        setVisible(true)
-      }, 400)
+      setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
     }, 5000)
     return () => clearInterval(interval)
   }, [])
@@ -37,13 +32,21 @@ function NewsTicker() {
         <span className="text-[10px] font-bold tracking-widest text-white uppercase font-mono">Updates</span>
       </div>
 
-      {/* News text */}
-      <p
-        className="flex-1 px-4 text-xs text-gray-600 dark:text-gray-300 font-mono whitespace-nowrap overflow-hidden text-ellipsis transition-opacity duration-300"
-        style={{ opacity: visible ? 1 : 0 }}
-      >
-        {NEWS_ITEMS[index]}
-      </p>
+      {/* Sliding news text */}
+      <div className="flex-1 overflow-hidden relative h-8 flex items-center">
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={index}
+            initial={{ x: '100%', opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: '-100%', opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className="absolute px-4 text-xs text-gray-600 dark:text-gray-300 font-mono whitespace-nowrap"
+          >
+            {NEWS_ITEMS[index]}
+          </motion.p>
+        </AnimatePresence>
+      </div>
     </div>
   )
 }
