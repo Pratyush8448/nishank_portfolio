@@ -14,7 +14,7 @@ function NewsTicker() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
-    }, 5000)
+    }, 8000)
     return () => clearInterval(interval)
   }, [])
 
