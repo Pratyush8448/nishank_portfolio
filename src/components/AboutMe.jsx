@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa'
 
 const NEWS_ITEMS = [
   'Data Analyst Agent deployed — visit Projects for a live demo ↗',
-  'Currently exploring hands on LLMs by O'Reilly publications.',
+  'Currently exploring hands on LLMs by O,Reilly publications.',
   'New full-stack project in progress — stay tuned for the app',
   'Open to interesting conversations — reach out via Contact ↗',
 ]
