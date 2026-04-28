@@ -4,9 +4,8 @@ import { FaDownload } from 'react-icons/fa'
 
 const NEWS_ITEMS = [
   'Data Analyst Agent deployed — visit Projects for a live demo ↗',
-  'Currently exploring multi-modal AI pipelines and intelligent agents',
-  'New RAG-based project in progress — stay tuned for the drop',
-  'Open to interesting conversations — reach out via Contact ↗',
+  'Currently exploring a book- Introduction to LLMs by Orielly',
+  'New full-stack web project in progress — stay tuned for the drop',
 ]
 
 function NewsTicker() {
@@ -15,7 +14,7 @@ function NewsTicker() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % NEWS_ITEMS.length)
-    }, 8000)
+    }, 5000)
     return () => clearInterval(interval)
   }, [])
 
