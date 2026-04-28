@@ -4,9 +4,9 @@ import { FaDownload } from 'react-icons/fa'
 
 const NEWS_ITEMS = [
   'Data Analyst Agent deployed — visit Projects for a live demo ↗',
-  'Currently exploring multi-modal AI pipelines and intelligent agents',
+  'Currently exploring a book - Introduction to LLMs by Orielly Publication ',
   'New RAG-based project in progress — stay tuned for the drop',
-  'Open to interesting conversations — reach out via Contact ↗',
+  
 ]
 
 function NewsTicker() {
