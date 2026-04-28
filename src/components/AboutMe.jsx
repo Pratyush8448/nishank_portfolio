@@ -39,7 +39,7 @@ function NewsTicker() {
             key={index}
             initial={{ x: '100%' }}
             animate={{ x: '-100%' }}
-            transition={{ duration: 9, ease: 'linear' }}
+            transition={{ duration: 7, ease: 'linear' }}
             className="absolute whitespace-nowrap px-4 text-xs text-gray-600 dark:text-gray-300 font-mono"
           >
             {NEWS_ITEMS[index]}
