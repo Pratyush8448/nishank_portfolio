@@ -21,8 +21,8 @@ const projectSections = [
       },
       {
         name: 'Virtual Teaching Assistant',
-        description: 'Developed a virtual Teaching Assistant API for IIT Madras’ Tools in Data Science course, integrating scraped course content and Discourse discussions. Implemented NLP-based question answering with support for text and image queries, returning structured JSON responses with relevant reference links.',
-        tech: ['LangChain', 'FAISS', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
+        description: 'Developed a RAG based virtual Teaching Assistant API for IIT Madras’ Tools in Data Science course, integrating scraped course content and Discourse discussions. Implemented NLP-based question answering with support for text and image queries, returning structured JSON responses with relevant reference links.',
+        tech: ['LangChain', 'RAG', 'OpenAI API', 'FastAPI', 'EasyOCR', 'Pillow', 'PyTorch', 'Scikit-learn'],
         github: 'https://github.com/Pratyush8448/Virtual_TA.git',
         demo: '#',
       },
