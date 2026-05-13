@@ -87,8 +87,8 @@ const projectSections = [
         'Flask-Login'
       ],
       aiAssisted: 'Frontend UI developed with Claude AI assistance',
-      github: '',
-      demo: '',
+      github: 'https://github.com/Pratyush8448/Production_Placement_Portal.git',
+      demo: 'https://placement-portal-vh3k.onrender.com',
     }
     ],
   },
