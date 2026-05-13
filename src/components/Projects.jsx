@@ -73,8 +73,26 @@ const projectSections = [
         github: 'https://github.com/Pratyush8448/portfolio-site',
         demo: '#',
       },
+      {
+      name: 'Institute Placement Portal',
+      description: 'A full-stack placement management platform for students, recruiters, and administrators featuring authentication, application tracking, job postings, and role-based dashboards.',
+      tech: [
+        'Python',
+        'Flask',
+        'SQLAlchemy',
+        'Jinja2',
+        'Bootstrap',
+        'JavaScript',
+        'SQLite',
+        'Flask-Login'
+      ],
+      aiAssisted: 'Frontend UI developed with Claude AI assistance',
+      github: '',
+      demo: '',
+    }
     ],
   },
+  
   {
     title: 'DevOps Projects',
     accent: '#f97316',
