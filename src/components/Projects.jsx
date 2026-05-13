@@ -67,15 +67,8 @@ const projectSections = [
     accent: '#60a5fa',
     projects: [
       {
-        name: 'Portfolio Website',
-        description: 'Portfolio website built with React, TailwindCSS, Framer Motion, and Lottie.',
-        tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Lottie'],
-        github: 'https://github.com/Pratyush8448/portfolio-site',
-        demo: '#',
-      },
-      {
       name: 'Institute Placement Portal',
-      description: 'A full-stack placement management platform for students, recruiters, and administrators featuring authentication, application tracking, job postings, and role-based dashboards.',
+      description: 'A full-stack placement management platform for students, recruiters, and administrators featuring authentication, application tracking, job postings, and role-based dashboards. The frontend UI workflow was accelerated with Claude AI assistance.',
       tech: [
         'Python',
         'Flask',
@@ -89,7 +82,14 @@ const projectSections = [
       aiAssisted: 'Frontend UI developed with Claude AI assistance',
       github: 'https://github.com/Pratyush8448/Production_Placement_Portal.git',
       demo: 'https://placement-portal-vh3k.onrender.com',
-    }
+    },
+    {
+        name: 'Portfolio Website',
+        description: 'Portfolio website built with React, TailwindCSS, Framer Motion, and Lottie.',
+        tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Lottie'],
+        github: 'https://github.com/Pratyush8448/portfolio-site',
+        demo: '#',
+      },
     ],
   },
   
