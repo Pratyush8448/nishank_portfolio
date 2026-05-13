@@ -33,7 +33,7 @@ const projectSections = [
     accent: '#34d399',
     projects: [
       {
-        name: 'Comment Category Prediction System',
+        name: 'Comment Category Prediction',
         description: 'Built an NLP-based multi-class text classification system to categorize online comments using advanced feature engineering and ensemble machine learning techniques. Applied extensive preprocessing, TF-IDF word and character embeddings, metadata feature extraction, feature scaling, and LightGBM modeling to handle large-scale textual data. Optimized model performance using class balancing, hyperparameter tuning, and macro F1-score evaluation, achieving strong classification performance on imbalanced classes.',
         tech: [
           'Python','Scikit-learn','LightGBM','NLP','TF-IDF','Text Classification','Feature Engineering','EDA','StandardScaler','GridSearchCV','Macro F1 Score','Sparse Matrices'
