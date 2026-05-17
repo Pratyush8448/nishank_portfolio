@@ -9,7 +9,7 @@ import Journey from './components/Journey'
 import Contact from './components/ContactForm'
 import Spaceship from "./components/Spaceship";
 import GithubStats from "./components/GithubStats"; 
-import Certificates from './components/Certificates'
+import Certificates from './components/certificates'
 
 
 import ThemeToggle from './components/ThemeToggle'
