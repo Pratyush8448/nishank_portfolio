@@ -31,6 +31,13 @@ const certificates = [
     date: "June – July 2025",
     image: "/devops-certificate.png",
   },
+  {
+    id: 5,
+    title: "Understanding Incubation and Entrepreneurship",
+    issuer: "NPTEL",
+    date: "January – April 2026",
+    image: "/nptel-incubation.png",
+  },
 ];
 
 /* ── useWindowWidth ── */
