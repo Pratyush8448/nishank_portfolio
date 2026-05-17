@@ -9,6 +9,8 @@ import Journey from './components/Journey'
 import Contact from './components/ContactForm'
 import Spaceship from "./components/Spaceship";
 import GithubStats from "./components/GithubStats"; 
+import Certificates from './components/Certificates'
+
 
 import ThemeToggle from './components/ThemeToggle'
 import { useTheme } from './theme'
@@ -56,6 +58,11 @@ function App() {
 
           <section id="skills">
             <Skills />
+          </section>
+
+          {/* Certificates */}
+          <section id="certificates">
+            <Certificates />
           </section>
 
           <section id="journey">
