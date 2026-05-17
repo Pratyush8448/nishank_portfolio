@@ -8,28 +8,28 @@ const certificates = [
     title: "Data Science Foundations",
     issuer: "IIT Madras",
     date: "September 2024",
-    image: "/foundation certificate.png",
+    image: "/foundation-certificate.png",
   },
   {
     id: 2,
     title: "Data Science, ML & Deep Learning",
     issuer: "Syllogistek Systems Pvt Ltd",
     date: "June – July 2024",
-    image: "/Datascience syllogistek.png",
+    image: "/Datascience-syllogistek.png",
   },
   {
     id: 3,
     title: "The Joy of Computing using Python",
     issuer: "NPTEL",
     date: "July – October 2025",
-    image: "/NPTEL python.png",
+    image: "/NPTEL-python.png",
   },
   {
     id: 4,
     title: "DevOps Masters",
     issuer: "Ingenious-tech",
     date: "June – July 2025",
-    image: "/devops certificate.png",
+    image: "/devops-certificate.png",
   },
 ];
 
